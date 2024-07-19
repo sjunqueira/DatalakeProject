@@ -2,6 +2,7 @@
 
 Este repositório contém um projeto de Data Lake que utiliza Airflow para orquestração de ingestão de dados do Postgres para o Snowflake, e dbt para transformação e criação de views. A infraestrutura foi implementada em uma máquina virtual Ubuntu hospedada no AWS EC2. O projeto foi criado ao longo do curso Bootcamp Engenharia de Dados na Udemy e seguiu as orientações do instrutor.
 
+
 ## Tecnologias Utilizadas
 - **Postgres:** Banco de dados de origem.
 - **Airflow:** Orquestração de workflows.
@@ -10,7 +11,7 @@ Este repositório contém um projeto de Data Lake que utiliza Airflow para orque
 - **AWS EC2:** Hospedagem da máquina virtual Ubuntu para execução do Docker e Airflow.
 
 ## Estrutura do Repositório
-- `airflow/`: Contém os DAGs do Airflow e o arquivo `docker-compose.yml` para configuração do ambiente.
+- `airflow/`: Contém a DAG do Airflow que consome o Postgres e envia para o Snowflake.
 - `dbt/`: Contém os modelos e configurações do dbt.
 - `sql/`: Scripts SQL para criação de tabelas e transformações.
 - `docs/`: Documentação adicional e diagramas.
